@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<BxfMessage id="urn:uuid:89254000-488e-a12f-3603-5c8f5c9c216f" dateTime="2016-12-12T12:00:00.00Z" xmlns="http://smpte-ra.org/schemas/2021/2008/BXF" xmlns:pmcp="http://www.atsc.org/XMLSchemas/pmcp/2007/3.1" xmlns:xsd="http://www.w3.org/2001/XMLSchema" origin="Traffic System" originType="Traffic" userName="PlaylistScript" destination="Automation">
+    <BxfData action="add">
+        <Schedule action="add" type="Primary" scheduleId="urn:uuid:27A2AF9B-AF57-40E0-8F55-55A62C8C7D9D" dayPattern="1000000" scheduleStart="2016-12-12T12:00:00Z" scheduleEnd="2016-12-13T12:00:00Z">
+            <Channel channelNumber="1" status="active" type="digital_television" ca="false" shortName="KGOD1">
+                <pmcp:Name>KGO</pmcp:Name>
+            </Channel>
+            <ScheduleName>KGOD1_20161212</ScheduleName>
+            <ScheduledEvent>
+                <ScheduleElements>
+                    <EventData eventType="Primary">
+                        <EventId>
+                            <EventId>urn:uuid:1543F9E4-F571-4F12-9B0D-C06518EBD474</EventId>
+                            <BillingReferenceCode>1</BillingReferenceCode>
+                        </EventId>
+                        <EventTitle>America This Morning - 1</EventTitle>
+                        <PrimaryEvent>
+                            <ProgramEvent>
+                                <SegmentNumber>1</SegmentNumber>
+                                <ProgramName>121216KGOAMERICATHISMORNING</ProgramName>
+                            </ProgramEvent>
+                        </PrimaryEvent>
+                        <StartDateTime>
+                            <SmpteDateTime broadcastDate="2016-12-12">
+                                <SmpteTimeCode>12:00:01:00</SmpteTimeCode>
+                            </SmpteDateTime>
+                        </StartDateTime>
+                        <LengthOption>
+                            <Duration>
+                                <SmpteDuration>
+                                    <SmpteTimeCode>00:12:27:00</SmpteTimeCode>
+                                </SmpteDuration>
+                            </Duration>
+                        </LengthOption>
+                        <StartMode>Fixed</StartMode>
+                        <EndMode>Duration</EndMode>
+                    </EventData>
+                    <Content>
+                        <ContentId>
+                            <HouseNumber>ABC1</HouseNumber>
+                        </ContentId>
+                        <Name>America This Morning</Name>
+                        <Media>
+                            <BaseBand />
+                            <MediaLocation>
+                                <Location>
+                                    <RouterSource>
+                                        <Name>ABC1</Name>
+                                    </RouterSource>
+                                </Location>
+                                <SOM>
+                                    <SmpteTimeCode>00:00:00:00</SmpteTimeCode>
+                                </SOM>
+                                <Duration>
+                                    <SmpteDuration>
+                                        <SmpteTimeCode>00:12:27:00</SmpteTimeCode>
+                                    </SmpteDuration>
+                                </Duration>
+                            </MediaLocation>
+                        </Media>
+                    </Content>
+                </ScheduleElements>
+            </ScheduledEvent>
+        </Schedule>
+    </BxfData>
+</BxfMessage>
